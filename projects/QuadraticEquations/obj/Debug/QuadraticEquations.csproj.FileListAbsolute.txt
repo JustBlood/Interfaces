@@ -1,0 +1,10 @@
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\QuadraticEquations\bin\Debug\QuadraticEquations.exe.config
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\QuadraticEquations\bin\Debug\QuadraticEquations.exe
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\QuadraticEquations\bin\Debug\QuadraticEquations.pdb
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\QuadraticEquations\obj\Debug\QuadraticEquations.csproj.AssemblyReference.cache
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\QuadraticEquations\obj\Debug\QuadraticEquations.Form1.resources
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\QuadraticEquations\obj\Debug\QuadraticEquations.Properties.Resources.resources
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\QuadraticEquations\obj\Debug\QuadraticEquations.csproj.GenerateResource.cache
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\QuadraticEquations\obj\Debug\QuadraticEquations.csproj.CoreCompileInputs.cache
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\QuadraticEquations\obj\Debug\QuadraticEquations.exe
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\QuadraticEquations\obj\Debug\QuadraticEquations.pdb

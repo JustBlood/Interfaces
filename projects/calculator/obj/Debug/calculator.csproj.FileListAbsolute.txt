@@ -1,0 +1,31 @@
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\calculator\bin\Debug\calculator.exe.config
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\calculator\bin\Debug\calculator.exe
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\calculator\bin\Debug\calculator.pdb
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\calculator\obj\Debug\calculator.csproj.AssemblyReference.cache
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\calculator\obj\Debug\calculator.Form1.resources
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\calculator\obj\Debug\calculator.Properties.Resources.resources
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\calculator\obj\Debug\calculator.csproj.GenerateResource.cache
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\calculator\obj\Debug\calculator.csproj.CoreCompileInputs.cache
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\calculator\obj\Debug\calculator.exe
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\calculator\obj\Debug\calculator.pdb
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\calculator\bin\Debug\MathNet.Numerics.dll
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\calculator\bin\Debug\System.ValueTuple.dll
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\calculator\bin\Debug\MathNet.Numerics.xml
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\calculator\bin\Debug\System.ValueTuple.xml
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\calculator\obj\Debug\calculator.csproj.CopyComplete
+C:\Users\User\AllMine\уник\4 курс\интерфейсы\projects\calculator\bin\Debug\calculator.exe.config
+C:\Users\User\AllMine\уник\4 курс\интерфейсы\projects\calculator\bin\Debug\calculator.exe
+C:\Users\User\AllMine\уник\4 курс\интерфейсы\projects\calculator\bin\Debug\calculator.pdb
+C:\Users\User\AllMine\уник\4 курс\интерфейсы\projects\calculator\bin\Debug\MathNet.Numerics.dll
+C:\Users\User\AllMine\уник\4 курс\интерфейсы\projects\calculator\bin\Debug\System.ValueTuple.dll
+C:\Users\User\AllMine\уник\4 курс\интерфейсы\projects\calculator\bin\Debug\MathNet.Numerics.xml
+C:\Users\User\AllMine\уник\4 курс\интерфейсы\projects\calculator\bin\Debug\System.ValueTuple.xml
+C:\Users\User\AllMine\уник\4 курс\интерфейсы\projects\calculator\obj\Debug\calculator.csproj.AssemblyReference.cache
+C:\Users\User\AllMine\уник\4 курс\интерфейсы\projects\calculator\obj\Debug\calculator.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\AllMine\уник\4 курс\интерфейсы\projects\calculator\obj\Debug\calculator.Form1.resources
+C:\Users\User\AllMine\уник\4 курс\интерфейсы\projects\calculator\obj\Debug\calculator.Properties.Resources.resources
+C:\Users\User\AllMine\уник\4 курс\интерфейсы\projects\calculator\obj\Debug\calculator.csproj.GenerateResource.cache
+C:\Users\User\AllMine\уник\4 курс\интерфейсы\projects\calculator\obj\Debug\calculator.csproj.CoreCompileInputs.cache
+C:\Users\User\AllMine\уник\4 курс\интерфейсы\projects\calculator\obj\Debug\calculator.csproj.CopyComplete
+C:\Users\User\AllMine\уник\4 курс\интерфейсы\projects\calculator\obj\Debug\calculator.exe
+C:\Users\User\AllMine\уник\4 курс\интерфейсы\projects\calculator\obj\Debug\calculator.pdb

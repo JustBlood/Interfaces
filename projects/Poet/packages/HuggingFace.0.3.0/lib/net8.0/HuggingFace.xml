@@ -1,0 +1,617 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HuggingFace</name>
+    </assembly>
+    <members>
+        <member name="T:HuggingFace.StringExtensions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:HuggingFace.StringExtensions.AsHumanMessage(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="content"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HuggingFace.StringExtensions.AsAssistantMessage(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="content"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HuggingFace.StringExtensions.AsPrompt(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="content"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HuggingFace.StringExtensions.AsPrompt(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="content"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HuggingFace.HuggingFaceApi">
+            <summary>
+            APIs for sampling from and fine-tuning language models<br/>
+            If no httpClient is provided, a new one will be created.<br/>
+            If no baseUri is provided, the default baseUri from OpenAPI spec will be used.
+            </summary>
+        </member>
+        <member name="M:HuggingFace.HuggingFaceApi.AuthorizeUsingBearer(System.String)">
+            <summary>
+            Authorize using bearer authentication.
+            </summary>
+            <param name="apiKey"></param>
+        </member>
+        <member name="M:HuggingFace.HuggingFaceApi.#ctor(System.String,System.Net.Http.HttpClient,System.Uri)">
+            <inheritdoc cref="M:HuggingFace.HuggingFaceApi.#ctor(System.Net.Http.HttpClient,System.Uri)"/>
+        </member>
+        <member name="F:HuggingFace.HuggingFaceApi.BaseUrl">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:HuggingFace.HuggingFaceApi.#ctor(System.Net.Http.HttpClient,System.Uri)">
+            <summary>
+            Creates a new instance of the HuggingFaceApi.
+            If no httpClient is provided, a new one will be created.
+            If no baseUri is provided, the default baseUri from OpenAPI spec will be used.
+            </summary>
+            <param name="httpClient"></param>
+            <param name="baseUri"></param> 
+        </member>
+        <member name="M:HuggingFace.HuggingFaceApi.Dispose">
+            <inheritdoc/>
+        </member>
+        <member name="M:HuggingFace.HuggingFaceApi.GenerateTextAsync(System.String,HuggingFace.GenerateTextRequest,System.Threading.CancellationToken)">
+            <summary>
+            Creates a completion for the provided prompt and parameters.
+            </summary>
+            <param name="modelId"></param>
+            <param name="request"></param>
+            <param name="cancellationToken">The token to cancel the operation with</param>
+            <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="M:HuggingFace.HuggingFaceApi.GenerateTextAsync(System.String,System.String,HuggingFace.GenerateTextRequestParameters,HuggingFace.GenerateTextRequestOptions,System.Threading.CancellationToken)">
+            <summary>
+            Creates a completion for the provided prompt and parameters.
+            </summary>
+            <param name="modelId"></param>
+            <param name="inputs">
+            The prompt that you want to complete.<br/>
+            Example: This is a test.
+            </param>
+            <param name="parameters"></param>
+            <param name="options"></param>
+            <param name="cancellationToken">The token to cancel the operation with</param>
+            <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="T:HuggingFace.ErrorResponse">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HuggingFace.ErrorResponse.Error">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HuggingFace.ErrorResponse.AdditionalProperties">
+            <summary>
+            Additional properties that are not explicitly defined in the schema
+            </summary>
+        </member>
+        <member name="T:HuggingFace.GenerateTextRequest">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HuggingFace.GenerateTextRequest.Inputs">
+            <summary>
+            The prompt that you want to complete.<br/>
+            Example: This is a test.
+            </summary>
+        </member>
+        <member name="P:HuggingFace.GenerateTextRequest.Parameters">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HuggingFace.GenerateTextRequest.Options">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HuggingFace.GenerateTextRequest.AdditionalProperties">
+            <summary>
+            Additional properties that are not explicitly defined in the schema
+            </summary>
+        </member>
+        <member name="T:HuggingFace.GenerateTextRequestOptions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HuggingFace.GenerateTextRequestOptions.UseCache">
+            <summary>
+            There is a cache layer on the inference API to speedup requests we have already seen. Most models can use those results as is as models are deterministic (meaning the results will be the same anyway). However if you use a non deterministic model, you can set this parameter to prevent the caching mechanism from being used resulting in a real new query.<br/>
+            Default Value: true
+            </summary>
+        </member>
+        <member name="P:HuggingFace.GenerateTextRequestOptions.WaitForModel">
+            <summary>
+            If the model is not ready, wait for it instead of receiving 503. It limits the number of requests required to get your inference done. It is advised to only set this flag to true after receiving a 503 error as it will limit hanging in your application to known places.<br/>
+            Default Value: false
+            </summary>
+        </member>
+        <member name="P:HuggingFace.GenerateTextRequestOptions.AdditionalProperties">
+            <summary>
+            Additional properties that are not explicitly defined in the schema
+            </summary>
+        </member>
+        <member name="T:HuggingFace.GenerateTextRequestOptionsUseCache">
+            <summary>
+            There is a cache layer on the inference API to speedup requests we have already seen. Most models can use those results as is as models are deterministic (meaning the results will be the same anyway). However if you use a non deterministic model, you can set this parameter to prevent the caching mechanism from being used resulting in a real new query.<br/>
+            Default Value: true
+            </summary>
+        </member>
+        <member name="P:HuggingFace.GenerateTextRequestOptionsUseCache.AdditionalProperties">
+            <summary>
+            Additional properties that are not explicitly defined in the schema
+            </summary>
+        </member>
+        <member name="T:HuggingFace.GenerateTextRequestOptionsWaitForModel">
+            <summary>
+            If the model is not ready, wait for it instead of receiving 503. It limits the number of requests required to get your inference done. It is advised to only set this flag to true after receiving a 503 error as it will limit hanging in your application to known places.<br/>
+            Default Value: false
+            </summary>
+        </member>
+        <member name="P:HuggingFace.GenerateTextRequestOptionsWaitForModel.AdditionalProperties">
+            <summary>
+            Additional properties that are not explicitly defined in the schema
+            </summary>
+        </member>
+        <member name="T:HuggingFace.GenerateTextRequestParameters">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HuggingFace.GenerateTextRequestParameters.TopK">
+            <summary>
+            Integer to define the top tokens considered within the sample operation to create new text.<br/>
+            Example: 1
+            </summary>
+        </member>
+        <member name="P:HuggingFace.GenerateTextRequestParameters.TopP">
+            <summary>
+            Float to define the tokens that are within the sample operation of text generation.<br/>
+            Add tokens in the sample for more probable to least probable until the sum of the probabilities is greater than top_p.<br/>
+            Example: 1
+            </summary>
+        </member>
+        <member name="P:HuggingFace.GenerateTextRequestParameters.Temperature">
+            <summary>
+            The temperature of the sampling operation.<br/>
+            1 means regular sampling,<br/>
+            0 means always take the highest score,<br/>
+            100.0 is getting closer to uniform probability.<br/>
+            Default Value: 1<br/>
+            Example: 1
+            </summary>
+        </member>
+        <member name="P:HuggingFace.GenerateTextRequestParameters.RepetitionPenalty">
+            <summary>
+            The more a token is used within generation the more it is penalized to not be picked in successive generation passes.<br/>
+            Example: 1
+            </summary>
+        </member>
+        <member name="P:HuggingFace.GenerateTextRequestParameters.MaxNewTokens">
+            <summary>
+            The amount of new tokens to be generated, this does not include the input length it is a estimate of the size of generated text you want.<br/>
+            Each new tokens slows down the request, so look for balance between response times and length of text generated.<br/>
+            Example: 250
+            </summary>
+        </member>
+        <member name="P:HuggingFace.GenerateTextRequestParameters.MaxTime">
+            <summary>
+            The amount of time in seconds that the query should take maximum. Network can cause some overhead so it will be a soft limit. Use that in combination with max_new_tokens for best results.<br/>
+            Example: 1
+            </summary>
+        </member>
+        <member name="P:HuggingFace.GenerateTextRequestParameters.ReturnFullText">
+            <summary>
+            If set to False, the return results will not contain the original query making it easier for prompting.<br/>
+            Default Value: true
+            </summary>
+        </member>
+        <member name="P:HuggingFace.GenerateTextRequestParameters.NumReturnSequences">
+            <summary>
+            The number of proposition you want to be returned.<br/>
+            Default Value: 1<br/>
+            Example: 1
+            </summary>
+        </member>
+        <member name="P:HuggingFace.GenerateTextRequestParameters.DoSample">
+            <summary>
+            Whether or not to use sampling, use greedy decoding otherwise.<br/>
+            Default Value: true
+            </summary>
+        </member>
+        <member name="P:HuggingFace.GenerateTextRequestParameters.AdditionalProperties">
+            <summary>
+            Additional properties that are not explicitly defined in the schema
+            </summary>
+        </member>
+        <member name="T:HuggingFace.GenerateTextRequestParametersDoSample">
+            <summary>
+            Whether or not to use sampling, use greedy decoding otherwise.<br/>
+            Default Value: true
+            </summary>
+        </member>
+        <member name="P:HuggingFace.GenerateTextRequestParametersDoSample.AdditionalProperties">
+            <summary>
+            Additional properties that are not explicitly defined in the schema
+            </summary>
+        </member>
+        <member name="T:HuggingFace.GenerateTextRequestParametersReturnFullText">
+            <summary>
+            If set to False, the return results will not contain the original query making it easier for prompting.<br/>
+            Default Value: true
+            </summary>
+        </member>
+        <member name="P:HuggingFace.GenerateTextRequestParametersReturnFullText.AdditionalProperties">
+            <summary>
+            Additional properties that are not explicitly defined in the schema
+            </summary>
+        </member>
+        <member name="T:HuggingFace.GenerateTextResponseValue">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HuggingFace.GenerateTextResponseValue.GeneratedText">
+            <summary>
+            The resulting completion up to and excluding the stop sequences.
+            </summary>
+        </member>
+        <member name="P:HuggingFace.GenerateTextResponseValue.AdditionalProperties">
+            <summary>
+            Additional properties that are not explicitly defined in the schema
+            </summary>
+        </member>
+        <member name="T:HuggingFace.SourceGenerationContext">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HuggingFace.SourceGenerationContext.Boolean">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:HuggingFace.SourceGenerationContext.Double">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:HuggingFace.SourceGenerationContext.NullableDouble">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:HuggingFace.SourceGenerationContext.ErrorResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:HuggingFace.SourceGenerationContext.GenerateTextRequest">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:HuggingFace.SourceGenerationContext.GenerateTextRequestOptions">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:HuggingFace.SourceGenerationContext.GenerateTextRequestOptionsUseCache">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:HuggingFace.SourceGenerationContext.GenerateTextRequestOptionsWaitForModel">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:HuggingFace.SourceGenerationContext.GenerateTextRequestParameters">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:HuggingFace.SourceGenerationContext.GenerateTextRequestParametersDoSample">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:HuggingFace.SourceGenerationContext.GenerateTextRequestParametersReturnFullText">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:HuggingFace.SourceGenerationContext.GenerateTextResponseValue">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:HuggingFace.SourceGenerationContext.JsonSerializerContextTypes">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:HuggingFace.SourceGenerationContext.AnyOfStringIListString">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:HuggingFace.SourceGenerationContext.NullableAnyOfStringIListString">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:HuggingFace.SourceGenerationContext.IDictionaryStringObject">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:HuggingFace.SourceGenerationContext.IListGenerateTextResponseValue">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:HuggingFace.SourceGenerationContext.IListString">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:HuggingFace.SourceGenerationContext.Int32">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:HuggingFace.SourceGenerationContext.NullableInt32">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:HuggingFace.SourceGenerationContext.Object">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:HuggingFace.SourceGenerationContext.String">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:HuggingFace.SourceGenerationContext.Default">
+            <summary>
+            The default <see cref="T:System.Text.Json.Serialization.JsonSerializerContext"/> associated with a default <see cref="T:System.Text.Json.JsonSerializerOptions"/> instance.
+            </summary>
+        </member>
+        <member name="P:HuggingFace.SourceGenerationContext.GeneratedSerializerOptions">
+            <summary>
+            The source-generated options associated with this context.
+            </summary>
+        </member>
+        <member name="M:HuggingFace.SourceGenerationContext.#ctor">
+            <inheritdoc/>
+        </member>
+        <member name="M:HuggingFace.SourceGenerationContext.#ctor(System.Text.Json.JsonSerializerOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:HuggingFace.SourceGenerationContext.GetTypeInfo(System.Type)">
+            <inheritdoc/>
+        </member>
+        <member name="T:HuggingFace.JsonSerializerContextTypes">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HuggingFace.JsonSerializerContextTypes.Type0">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HuggingFace.JsonSerializerContextTypes.Type1">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HuggingFace.JsonSerializerContextTypes.Type2">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HuggingFace.JsonSerializerContextTypes.Type3">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HuggingFace.JsonSerializerContextTypes.Type4">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HuggingFace.JsonSerializerContextTypes.Type5">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HuggingFace.JsonSerializerContextTypes.Type6">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HuggingFace.JsonSerializerContextTypes.Type7">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HuggingFace.JsonSerializerContextTypes.Type8">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HuggingFace.JsonSerializerContextTypes.Type9">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HuggingFace.JsonSerializerContextTypes.Type10">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HuggingFace.JsonSerializerContextTypes.Type11">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HuggingFace.JsonSerializerContextTypes.Type12">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HuggingFace.JsonSerializerContextTypes.Type13">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HuggingFace.JsonSerializerContextTypes.Type14">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:System.AnyOf`2">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:System.AnyOf`2.Value1">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:System.AnyOf`2.IsValue1">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:System.AnyOf`2.op_Implicit(`0)~System.AnyOf{`0,`1}">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:System.AnyOf`2.op_Implicit(System.AnyOf{`0,`1})~`0">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:System.AnyOf`2.#ctor(`0)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:System.AnyOf`2.Value2">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:System.AnyOf`2.IsValue2">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:System.AnyOf`2.op_Implicit(`1)~System.AnyOf{`0,`1}">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:System.AnyOf`2.op_Implicit(System.AnyOf{`0,`1})~`1">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:System.AnyOf`2.#ctor(`1)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:System.AnyOf`2.#ctor(`0,`1)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:System.AnyOf`2.Object">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:System.AnyOf`2.Validate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:System.AnyOf`2.GetHashCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:System.AnyOf`2.Equals(System.AnyOf{`0,`1})">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:System.AnyOf`2.op_Equality(System.AnyOf{`0,`1},System.AnyOf{`0,`1})">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:System.AnyOf`2.op_Inequality(System.AnyOf{`0,`1},System.AnyOf{`0,`1})">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:System.AnyOf`2.Equals(System.Object)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:OpenApiGenerator.JsonConverters.AnyOfJsonConverter`2">
+            <inheritdoc />
+        </member>
+        <member name="M:OpenApiGenerator.JsonConverters.AnyOfJsonConverter`2.Read(System.Text.Json.Utf8JsonReader@,System.Type,System.Text.Json.JsonSerializerOptions)">
+            <inheritdoc />
+        </member>
+        <member name="M:OpenApiGenerator.JsonConverters.AnyOfJsonConverter`2.Write(System.Text.Json.Utf8JsonWriter,System.AnyOf{`0,`1},System.Text.Json.JsonSerializerOptions)">
+            <inheritdoc />
+        </member>
+        <member name="T:OpenApiGenerator.JsonConverters.AnyOfJsonConverterFactory2">
+            <inheritdoc />
+        </member>
+        <member name="M:OpenApiGenerator.JsonConverters.AnyOfJsonConverterFactory2.CanConvert(System.Type)">
+            <inheritdoc />
+        </member>
+        <member name="M:OpenApiGenerator.JsonConverters.AnyOfJsonConverterFactory2.CreateConverter(System.Type,System.Text.Json.JsonSerializerOptions)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

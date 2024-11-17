@@ -1,0 +1,34 @@
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\Development-and-programming-of-ui\Paint\obj\Debug\net6.0-windows\Paint.Form1.resources
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\Development-and-programming-of-ui\Paint\obj\Debug\net6.0-windows\Paint.csproj.GenerateResource.cache
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\Development-and-programming-of-ui\Paint\obj\Debug\net6.0-windows\Paint.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\Development-and-programming-of-ui\Paint\obj\Debug\net6.0-windows\Paint.AssemblyInfoInputs.cache
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\Development-and-programming-of-ui\Paint\obj\Debug\net6.0-windows\Paint.AssemblyInfo.cs
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\Development-and-programming-of-ui\Paint\obj\Debug\net6.0-windows\Paint.csproj.CoreCompileInputs.cache
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\Development-and-programming-of-ui\Paint\obj\Debug\net6.0-windows\Paint.sourcelink.json
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\Development-and-programming-of-ui\Paint\bin\Debug\net6.0-windows\Paint.exe
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\Development-and-programming-of-ui\Paint\bin\Debug\net6.0-windows\Paint.deps.json
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\Development-and-programming-of-ui\Paint\bin\Debug\net6.0-windows\Paint.runtimeconfig.json
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\Development-and-programming-of-ui\Paint\bin\Debug\net6.0-windows\Paint.dll
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\Development-and-programming-of-ui\Paint\bin\Debug\net6.0-windows\Paint.pdb
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\Development-and-programming-of-ui\Paint\obj\Debug\net6.0-windows\Paint.dll
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\Development-and-programming-of-ui\Paint\obj\Debug\net6.0-windows\refint\Paint.dll
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\Development-and-programming-of-ui\Paint\obj\Debug\net6.0-windows\Paint.pdb
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\Development-and-programming-of-ui\Paint\obj\Debug\net6.0-windows\Paint.genruntimeconfig.cache
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\Development-and-programming-of-ui\Paint\obj\Debug\net6.0-windows\ref\Paint.dll
+C:\Users\User\AllMine\уник\4 курс\интерфейсы\projects\Paint\bin\Debug\net6.0-windows\Paint.exe
+C:\Users\User\AllMine\уник\4 курс\интерфейсы\projects\Paint\bin\Debug\net6.0-windows\Paint.deps.json
+C:\Users\User\AllMine\уник\4 курс\интерфейсы\projects\Paint\bin\Debug\net6.0-windows\Paint.runtimeconfig.json
+C:\Users\User\AllMine\уник\4 курс\интерфейсы\projects\Paint\bin\Debug\net6.0-windows\Paint.dll
+C:\Users\User\AllMine\уник\4 курс\интерфейсы\projects\Paint\bin\Debug\net6.0-windows\Paint.pdb
+C:\Users\User\AllMine\уник\4 курс\интерфейсы\projects\Paint\obj\Debug\net6.0-windows\Paint.csproj.AssemblyReference.cache
+C:\Users\User\AllMine\уник\4 курс\интерфейсы\projects\Paint\obj\Debug\net6.0-windows\Paint.Form1.resources
+C:\Users\User\AllMine\уник\4 курс\интерфейсы\projects\Paint\obj\Debug\net6.0-windows\Paint.csproj.GenerateResource.cache
+C:\Users\User\AllMine\уник\4 курс\интерфейсы\projects\Paint\obj\Debug\net6.0-windows\Paint.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\AllMine\уник\4 курс\интерфейсы\projects\Paint\obj\Debug\net6.0-windows\Paint.AssemblyInfoInputs.cache
+C:\Users\User\AllMine\уник\4 курс\интерфейсы\projects\Paint\obj\Debug\net6.0-windows\Paint.AssemblyInfo.cs
+C:\Users\User\AllMine\уник\4 курс\интерфейсы\projects\Paint\obj\Debug\net6.0-windows\Paint.csproj.CoreCompileInputs.cache
+C:\Users\User\AllMine\уник\4 курс\интерфейсы\projects\Paint\obj\Debug\net6.0-windows\Paint.dll
+C:\Users\User\AllMine\уник\4 курс\интерфейсы\projects\Paint\obj\Debug\net6.0-windows\refint\Paint.dll
+C:\Users\User\AllMine\уник\4 курс\интерфейсы\projects\Paint\obj\Debug\net6.0-windows\Paint.pdb
+C:\Users\User\AllMine\уник\4 курс\интерфейсы\projects\Paint\obj\Debug\net6.0-windows\Paint.genruntimeconfig.cache
+C:\Users\User\AllMine\уник\4 курс\интерфейсы\projects\Paint\obj\Debug\net6.0-windows\ref\Paint.dll

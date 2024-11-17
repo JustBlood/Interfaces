@@ -1,0 +1,185 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Tiktoken.Core</name>
+    </assembly>
+    <members>
+        <member name="T:Tiktoken.Core.BytePairEncoding">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Tiktoken.CoreBpe">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Tiktoken.CoreBpe.#ctor(System.Collections.Generic.IReadOnlyDictionary{System.Byte[],System.Int32},System.Collections.Generic.IReadOnlyDictionary{System.String,System.Int32},System.String)">
+            <summary>
+            
+            </summary>
+            <param name="encoder"></param>
+            <param name="specialTokensEncoder"></param>
+            <param name="pattern"></param>
+        </member>
+        <member name="M:Tiktoken.CoreBpe.CountTokensNative(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Tiktoken.CoreBpe.EncodeNative(System.String,System.Collections.Generic.HashSet{System.String},System.Collections.Generic.HashSet{System.String})">
+            <summary>
+            
+            </summary>
+            <param name="text"></param>
+            <param name="allowedSpecial"></param>
+            <param name="disallowedSpecial"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Tiktoken.CoreBpe.Explore(System.String,System.Collections.Generic.HashSet{System.String},System.Collections.Generic.HashSet{System.String})">
+            <summary>
+            
+            </summary>
+            <param name="text"></param>
+            <param name="allowedSpecial"></param>
+            <param name="disallowedSpecial"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Tiktoken.CoreBpe.ExploreUtfSafe(System.String,System.Collections.Generic.HashSet{System.String},System.Collections.Generic.HashSet{System.String})">
+            <summary>
+            
+            </summary>
+            <param name="text"></param>
+            <param name="allowedSpecial"></param>
+            <param name="disallowedSpecial"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Tiktoken.CoreBpe.DecodeNative(System.Collections.Generic.IReadOnlyCollection{System.Int32})">
+            <summary>
+            
+            </summary>
+            <param name="tokens"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Tiktoken.Encoder">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Tiktoken.Encoder.EnableCache">
+            <summary>
+            Enable cache for fast encoding.
+            Default: true.
+            </summary>
+        </member>
+        <member name="M:Tiktoken.Encoder.#ctor(Tiktoken.Encodings.Encoding)">
+            <summary>
+            
+            </summary>
+            <param name="encoding"></param>
+        </member>
+        <member name="M:Tiktoken.Encoder.CountTokens(System.String)">
+            <summary>
+            Counts tokens in fast mode. Does not take into account special tokens.
+            </summary>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Tiktoken.Encoder.Encode(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="text"></param>
+            <returns></returns>
+            <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="M:Tiktoken.Encoder.Explore(System.String)">
+            <summary>
+            Returns tokens from the processing stage as a list of strings.
+            This would enhance visibility over the tokenization process, facilitate token manipulation,
+            and could serve as a useful tool for educational purposes.
+            </summary>
+            <param name="text"></param>
+            <returns></returns>
+            <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="M:Tiktoken.Encoder.ExploreUtfSafe(System.String)">
+            <summary>
+            Returns tokens from the processing stage as a list of strings.
+            This would enhance visibility over the tokenization process, facilitate token manipulation,
+            and could serve as a useful tool for educational purposes.
+            Unlike <see cref="M:Tiktoken.Encoder.Explore(System.String)"/> this method returns token in a printable manner, in which each token is encoded as one more tokens.
+            For example, Cl100KBase can encode 🤚🏾 (Raised Back of Hand: Dark Skin Tone) with as much as 6 tokens.
+            </summary>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Tiktoken.Encoder.EncodeWithAllAllowedSpecial(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="text"></param>
+            <returns></returns>
+            <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="M:Tiktoken.Encoder.EncodeWithAllDisallowedSpecial(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="text"></param>
+            <returns></returns>
+            <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="M:Tiktoken.Encoder.EncodeWithAllowedSpecial(System.String,System.Collections.Generic.IReadOnlyCollection{System.String})">
+            <summary>
+            
+            </summary>
+            <param name="text"></param>
+            <param name="allowedSpecial"></param>
+            <returns></returns>
+            <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="M:Tiktoken.Encoder.EncodeWithDisallowedSpecial(System.String,System.Collections.Generic.IReadOnlyCollection{System.String})">
+            <summary>
+            
+            </summary>
+            <param name="text"></param>
+            <param name="disallowedSpecial"></param>
+            <returns></returns>
+            <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="M:Tiktoken.Encoder.Decode(System.Collections.Generic.IReadOnlyCollection{System.Int32})">
+            <summary>
+            
+            </summary>
+            <param name="tokens"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Tiktoken.UtfToken">
+            <summary>
+            
+            </summary>
+            <param name="token"></param>
+            <param name="encodedTokens"></param>
+        </member>
+        <member name="M:Tiktoken.UtfToken.#ctor(System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="token"></param>
+            <param name="encodedTokens"></param>
+        </member>
+        <member name="P:Tiktoken.UtfToken.Token">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Tiktoken.UtfToken.EncodedTokens">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>
