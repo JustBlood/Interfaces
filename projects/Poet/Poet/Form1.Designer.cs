@@ -11,11 +11,13 @@
             this.labelOutput = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // textBoxInput
             // 
-            this.textBoxInput.Location = new System.Drawing.Point(206, 32);
+            this.textBoxInput.Location = new System.Drawing.Point(349, 29);
             this.textBoxInput.Multiline = true;
             this.textBoxInput.Name = "textBoxInput";
             this.textBoxInput.Size = new System.Drawing.Size(260, 150);
@@ -33,7 +35,7 @@
             // 
             // buttonGenerate
             // 
-            this.buttonGenerate.Location = new System.Drawing.Point(280, 188);
+            this.buttonGenerate.Location = new System.Drawing.Point(423, 185);
             this.buttonGenerate.Name = "buttonGenerate";
             this.buttonGenerate.Size = new System.Drawing.Size(99, 23);
             this.buttonGenerate.TabIndex = 2;
@@ -44,7 +46,7 @@
             // labelInput
             // 
             this.labelInput.AutoSize = true;
-            this.labelInput.Location = new System.Drawing.Point(313, 9);
+            this.labelInput.Location = new System.Drawing.Point(456, 6);
             this.labelInput.Name = "labelInput";
             this.labelInput.Size = new System.Drawing.Size(34, 13);
             this.labelInput.TabIndex = 3;
@@ -76,9 +78,28 @@
             this.textBox1.Size = new System.Drawing.Size(260, 150);
             this.textBox1.TabIndex = 5;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(705, 242);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(121, 13);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Выход (Словарь слов):";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(699, 266);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(260, 150);
+            this.textBox2.TabIndex = 7;
+            // 
             // Form1
             // 
-            this.ClientSize = new System.Drawing.Size(613, 428);
+            this.ClientSize = new System.Drawing.Size(963, 428);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.labelOutput);
@@ -100,5 +121,7 @@
         private System.Windows.Forms.Label labelOutput;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }

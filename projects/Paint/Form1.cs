@@ -273,6 +273,7 @@ namespace Paint
         private void ClearCanvas(object sender, EventArgs e)
         {
             shapes.Clear();
+            selectedShape = null;
             using (Graphics g = Graphics.FromImage(canvas))
             {
                 g.Clear(Color.White);
